@@ -1,0 +1,12 @@
+{{ define "main" }} <!--this will be the main page-->
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <h1>{{ .Site.Title }}</h1> <!--fetches site title-->
+            <h2 class="text-secondary h3">{{ .Params.subtitle }}</h2>
+            <!--fetch all the content-->
+            {{ .Content }}
+        </div>
+    </div>
+</div>
+{{ end }}
